@@ -1,8 +1,6 @@
 #pragma once
 
-
 #include "AGK.h"
-#include "character.h"
 #include "input_handler.h"
 #include "command.h"
 
@@ -26,6 +24,5 @@ public:
 
 private:
 	InputHandler inputHandler_; // This object is processing all user input
-	Character* character_;      // Pointer to character (our hero)
 	Command* command_;          // Pointer to command, that must be done in accordance with the pressed key
 };

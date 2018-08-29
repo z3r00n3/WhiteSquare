@@ -210,14 +210,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="character.cpp" />
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="input_handler.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="character.h" />
     <ClInclude Include="command.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="input_handler.h" />

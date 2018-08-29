@@ -89,11 +89,5 @@ public:
 	Command* Handler();
 
 private:
-	Command* idle_;
-	Command* turn_;
-	Command* turnRight_;
-	Command* turnLeft_;
-	Command* moveLeft_;
-	Command* moveRight_;
-	Command* space_;
+	Command* someCommand_;
 };

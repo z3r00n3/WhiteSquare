@@ -2,12 +2,10 @@
 
 Game::Game()
 {
-	character_ = new Character(1, Direction::RIGHT, 50, 100, 1, -1, 50);
 }
 
 Game::~Game()
 {
-	delete character_;
 }
 
 void Game::Settings()
@@ -24,7 +22,6 @@ void Game::Settings()
 
 void Game::LoadResources()
 {
-	character_->LoadResources();
 }
 
 void Game::GetInputHandler()
@@ -32,5 +29,5 @@ void Game::GetInputHandler()
 	command_ = inputHandler_.Handler();
 
 	if (command_)
-		command_->Execute(character_);
+		command_->Execute();
 }
