@@ -214,6 +214,7 @@
     <ClCompile Include="creep.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="input_handler.cpp" />
+    <ClCompile Include="spellball.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="tower.cpp" />
   </ItemGroup>
@@ -222,6 +223,7 @@
     <ClInclude Include="creep.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="input_handler.h" />
+    <ClInclude Include="spellball.h" />
     <ClInclude Include="template.h" />
     <ClInclude Include="tower.h" />
   </ItemGroup>

@@ -21,6 +21,9 @@ int app::Loop()
 {
 	agk::Print(agk::ScreenFPS());
 	agk::Print(agk::GetSeconds());
+	//agk::PrintC(game.creep.x);
+	//agk::PrintC(":");
+	//agk::Print(game.creep.y);
 
 	game.GetInputHandler();
 	game.Loop();

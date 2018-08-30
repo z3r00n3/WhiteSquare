@@ -5,6 +5,7 @@
 #include "command.h"
 #include "tower.h"
 #include "creep.h"
+#include "spellball.h"
 
 #define WIN_WIDTH    1000
 #define WIN_HEIGHT   600
@@ -30,4 +31,5 @@ private:
 	Command* command_;          // Pointer to command, that must be done in accordance with the pressed key
 	Tower tower;
 	Creep creep;
+	SpellBall spellball;
 };
