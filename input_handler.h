@@ -1,7 +1,7 @@
 #pragma once
 
-#include "command.h"
 #include "AGK.h"
+#include "command.h"
 
 // Mnemonic names for keys
 #define KEY_BACKSPACE 8
