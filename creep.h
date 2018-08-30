@@ -8,12 +8,15 @@ class Creep
 {
 public:
 	void LoadResources();
+	void Loop();
 
 private:
 	int healthPoints, dmgPoints;
+	float x, y, moveSpeed;
 
 	int imgID, spriteID;
 
+	void Push();
 	void Attack();
 	void GetHit();
 };

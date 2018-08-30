@@ -33,3 +33,8 @@ void Game::GetInputHandler()
 	if (command_)
 		command_->Execute();
 }
+
+void Game::Loop()
+{
+	creep.Loop();
+}

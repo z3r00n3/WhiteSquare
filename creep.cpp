@@ -7,7 +7,22 @@ void Creep::LoadResources()
 
 	agk::SetSpriteSize(spriteID, -1.0f, 15.0f);
 	agk::SetSpriteOffset(spriteID, 0.0f, agk::GetSpriteHeight(spriteID));
-	agk::SetSpritePositionByOffset(spriteID, 100.0f - agk::GetSpriteWidth(spriteID), 100.0f);
+	x = 100.0f - agk::GetSpriteWidth(spriteID);
+	y = 100.0f;
+	agk::SetSpritePositionByOffset(spriteID, x, y);
+	moveSpeed = 0.02f;
+	agk::SetSpriteSnap(spriteID, 1);
+}
+
+void Creep::Loop()
+{
+	Push();
+}
+
+void Creep::Push()
+{
+	x -= moveSpeed;
+	agk::SetSpritePositionByOffset(spriteID, x, y);
 }
 
 void Creep::Attack()

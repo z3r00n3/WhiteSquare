@@ -23,6 +23,7 @@ int app::Loop()
 	agk::Print(agk::GetSeconds());
 
 	game.GetInputHandler();
+	game.Loop();
 
 	agk::Sync();
 

@@ -23,6 +23,7 @@ public:
 	void Settings();
 	void LoadResources();
 	void GetInputHandler();
+	void Loop();
 
 private:
 	InputHandler inputHandler_; // This object is processing all user input
