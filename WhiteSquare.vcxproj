@@ -211,6 +211,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Core.cpp" />
+    <ClCompile Include="creep.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="input_handler.cpp" />
     <ClCompile Include="template.cpp" />
@@ -218,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="command.h" />
+    <ClInclude Include="creep.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="input_handler.h" />
     <ClInclude Include="template.h" />

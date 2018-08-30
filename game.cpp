@@ -23,6 +23,7 @@ void Game::Settings()
 void Game::LoadResources()
 {
 	tower.LoadResources();
+	creep.LoadResources();
 }
 
 void Game::GetInputHandler()

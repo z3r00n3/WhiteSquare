@@ -10,7 +10,7 @@ public:
 	void LoadResources();
 
 private:
-	int healthPoints, spellDmg;
+	int healthPoints, dmgPoints;
 	
 	int imgID, spriteID;
 
