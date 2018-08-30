@@ -10,7 +10,7 @@ Game::~Game()
 
 void Game::Settings()
 {
-	agk::SetWindowTitle("Single Character");
+	agk::SetWindowTitle("2DTD");
 	agk::SetWindowSize(WIN_WIDTH, WIN_HEIGHT, FULLSCREEN);
 	agk::SetWindowPosition(WIN_POS_X, WIN_POS_Y);
 	agk::SetWindowAllowResize(ALLOW_RESIZE);
@@ -22,6 +22,7 @@ void Game::Settings()
 
 void Game::LoadResources()
 {
+	tower.LoadResources();
 }
 
 void Game::GetInputHandler()
