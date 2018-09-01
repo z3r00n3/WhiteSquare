@@ -22,9 +22,9 @@ void Game::Settings()
 
 void Game::LoadResources()
 {
-	tower.LoadResources();
-	creep.LoadResources();
-	spellball.LoadResources();
+	tower_.LoadResources();
+	creep_.LoadResources();
+	spellball_.LoadResources();
 }
 
 void Game::GetInputHandler()
@@ -37,6 +37,6 @@ void Game::GetInputHandler()
 
 void Game::Loop()
 {
-	creep.Push();
-	spellball.Fly();
+	creep_.Push();
+	spellball_.Fly();
 }

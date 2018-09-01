@@ -29,7 +29,7 @@ public:
 private:
 	InputHandler inputHandler_; // This object is processing all user input
 	Command* command_;          // Pointer to command, that must be done in accordance with the pressed key
-	Tower tower;
-	Creep creep;
-	SpellBall spellball;
+	Tower tower_;
+	Creep creep_;
+	SpellBall spellball_;
 };

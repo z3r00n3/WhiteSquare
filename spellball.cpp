@@ -2,25 +2,25 @@
 
 void SpellBall::LoadResources()
 {
-	imgID = agk::LoadImage(SPELL_IMG);
-	spriteID = agk::CreateSprite(imgID);
+	imgID_ = agk::LoadImage(SPELL_IMG);
+	spriteID_ = agk::CreateSprite(imgID_);
 
-	x = 7.0f;
-	y = 47.0f;
-	moveSpeed = 0.2f;
+	x_ = 7.0f;
+	y_ = 47.0f;
+	moveSpeed_ = 0.2f;
 
-	agk::SetSpriteSize(spriteID, 10.0f, -1.0f);
-	agk::SetSpriteOffset(spriteID, agk::GetSpriteWidth(spriteID) / 2, agk::GetSpriteHeight(spriteID) / 2);
-	agk::SetSpritePositionByOffset(spriteID, 7.0f, 47.0f);
-	agk::SetSpriteSnap(spriteID, 1);
-	agk::SetSpriteAnimation(spriteID, 512, 512, 6);
-	agk::PlaySprite(spriteID);
+	agk::SetSpriteSize(spriteID_, 10.0f, -1.0f);
+	agk::SetSpriteOffset(spriteID_, agk::GetSpriteWidth(spriteID_) / 2, agk::GetSpriteHeight(spriteID_) / 2);
+	agk::SetSpritePositionByOffset(spriteID_, 7.0f, 47.0f);
+	agk::SetSpriteSnap(spriteID_, 1);
+	agk::SetSpriteAnimation(spriteID_, 512, 512, 6);
+	agk::PlaySprite(spriteID_);
 }
 
 void SpellBall::Fly()
 {
-	x += moveSpeed;
-	agk::SetSpritePositionByOffset(spriteID, x, y);
+	x_ += moveSpeed_;
+	agk::SetSpritePositionByOffset(spriteID_, x_, y_);
 }
 
 void SpellBall::TakeHit()

@@ -17,7 +17,7 @@
 class app
 {
 private:
-	Game game;
+	Game game_;
 
 public:
 

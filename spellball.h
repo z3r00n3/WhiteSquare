@@ -11,10 +11,10 @@ public:
 	void Fly();
 
 private:
-	int dmgPoints;
-	float x, y, moveSpeed;
+	int dmgPoints_;
+	float x_, y_, moveSpeed_;
 
-	int imgID, spriteID;
+	int imgID_, spriteID_;
 
 	void TakeHit();
 };

@@ -2,24 +2,34 @@
 
 void Creep::LoadResources()
 {
-	imgID = agk::LoadImage(CREEP_IMG);
-	spriteID = agk::CreateSprite(imgID);
+	imgID_ = agk::LoadImage(CREEP_IMG);
+	spriteID_ = agk::CreateSprite(imgID_);
 
-	agk::SetSpriteSize(spriteID, -1.0f, 15.0f);
+	agk::SetSpriteSize(spriteID_, -1.0f, 15.0f);
 
-	x = 100.0f - agk::GetSpriteWidth(spriteID);
-	y = 100.0f;
-	moveSpeed = 0.02f;
+	x_ = 100.0f - agk::GetSpriteWidth(spriteID_);
+	y_ = 100.0f;
+	moveSpeed_ = 0.02f;
 	
-	agk::SetSpriteOffset(spriteID, 0.0f, agk::GetSpriteHeight(spriteID));
-	agk::SetSpritePositionByOffset(spriteID, x, y);
-	agk::SetSpriteSnap(spriteID, 1);
+	agk::SetSpriteOffset(spriteID_, 0.0f, agk::GetSpriteHeight(spriteID_));
+	agk::SetSpritePositionByOffset(spriteID_, x_, y_);
+	agk::SetSpriteSnap(spriteID_, 1);
 }
 
 void Creep::Push()
 {
-	x -= moveSpeed;
-	agk::SetSpritePositionByOffset(spriteID, x, y);
+	x_ -= moveSpeed_;
+	agk::SetSpritePositionByOffset(spriteID_, x_, y_);
+}
+
+float Creep::GetX()
+{
+	return x_;
+}
+
+float Creep::GetY()
+{
+	return y_;
 }
 
 void Creep::Attack()

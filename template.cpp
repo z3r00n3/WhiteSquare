@@ -13,8 +13,8 @@ app::app()
 
 void app::Begin()
 {
-	game.Settings();
-	game.LoadResources();
+	game_.Settings();
+	game_.LoadResources();
 }
 
 int app::Loop()
@@ -25,8 +25,8 @@ int app::Loop()
 	//agk::PrintC(":");
 	//agk::Print(game.creep.y);
 
-	game.GetInputHandler();
-	game.Loop();
+	game_.GetInputHandler();
+	game_.Loop();
 
 	agk::Sync();
 

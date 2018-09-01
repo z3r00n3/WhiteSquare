@@ -10,9 +10,9 @@ public:
 	void LoadResources();
 
 private:
-	int healthPoints, dmgPoints;
+	int healthPoints_, dmgPoints_;
 	
-	int imgID, spriteID;
+	int imgID_, spriteID_;
 
 	void Attack();
 	void GetHit();

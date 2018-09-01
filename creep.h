@@ -9,12 +9,14 @@ class Creep
 public:
 	void LoadResources();
 	void Push();
+	float GetX();
+	float GetY();
 
 private:
-	int healthPoints, dmgPoints;
-	float x, y, moveSpeed;
+	int healthPoints_, dmgPoints_;
+	float x_, y_, moveSpeed_;
 
-	int imgID, spriteID;
+	int imgID_, spriteID_;
 
 	void Attack();
 	void GetHit();
