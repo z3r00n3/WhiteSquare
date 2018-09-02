@@ -8,11 +8,11 @@ class SpellBall
 {
 public:
 	void LoadResources();
-	void Fly();
+	void Fly(float x, float y);
 
 private:
 	int dmgPoints_;
-	float x_, y_, moveSpeed_;
+	float x_, y_, moveSpeedByX_, moveSpeedByY_;
 
 	int imgID_, spriteID_;
 

@@ -7,7 +7,8 @@ void SpellBall::LoadResources()
 
 	x_ = 7.0f;
 	y_ = 47.0f;
-	moveSpeed_ = 0.2f;
+	moveSpeedByX_ = 0.2f;
+	moveSpeedByY_ = 0.2f;
 
 	agk::SetSpriteSize(spriteID_, 10.0f, -1.0f);
 	agk::SetSpriteOffset(spriteID_, agk::GetSpriteWidth(spriteID_) / 2, agk::GetSpriteHeight(spriteID_) / 2);
@@ -17,9 +18,10 @@ void SpellBall::LoadResources()
 	agk::PlaySprite(spriteID_);
 }
 
-void SpellBall::Fly()
+void SpellBall::Fly(float x, float y)
 {
-	x_ += moveSpeed_;
+	x_ += moveSpeedByX_;
+	y_ += moveSpeedByY_;
 	agk::SetSpritePositionByOffset(spriteID_, x_, y_);
 }
 
