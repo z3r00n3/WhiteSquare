@@ -8,7 +8,7 @@ class SpellBall
 {
 public:
 	void LoadResources();
-	void Fly(float x, float y);
+	void Fly(/*float x, float y*/);
 
 private:
 	int dmgPoints_;

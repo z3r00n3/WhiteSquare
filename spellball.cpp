@@ -18,7 +18,7 @@ void SpellBall::LoadResources()
 	agk::PlaySprite(spriteID_);
 }
 
-void SpellBall::Fly(float x, float y)
+void SpellBall::Fly(/*float x, float y*/)
 {
 	x_ += moveSpeedByX_;
 	y_ += moveSpeedByY_;
